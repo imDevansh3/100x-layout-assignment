@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                twitterBlueDefault: "#1D9BF0",
+                twitterBluehover: '#1871CA',
+                blueWash: "rgba(117, 190, 239, 0.2)",
+        Secondary: "rgba(255, 255, 255, 0.6)",
+        buttonStock: "#546A7A",
+        neutral50: "#F9F9F9",
+        neutral100: "#F4F4F4",
+        neutral200: "#E4E4E4",
+        neutral300: "#D3D3D3",
+        neutral400: "#A2A2A2",
+        neutral500: "#737373",
+        neutral600: "#525252",
+        neutral700: "#404040",
+        neutral800: "#262626",
+        neutral900: "#171717",
+        neutral950: "#0A0A0A",
+        neutral1000: "#000",
+            }
+          }
+        }
+      }
+      </script>
+    <title>100x</title>
+</head>
+<body class="min-h-screen font-inter text-neutral50 pb-5 px-[15px] bg-black flex flex-col justify-between items-start flex-shrink-0">
+    <section class="flex flex-col items-start gap-3 self-stretch">
+      <!-- Header -->
+      <header class="mb-auto py-3 flex items-center gap-5 self-stretch">
+        <a href="../index.html" class="w-6 h-6" rel="noopener noreferrer">
+          <img src="../public/images/signup-x.svg" alt="cancel-icon">
+        </a>
+        <p class="text-base-1 font-bold leading-normal">
+          Step 4 of 4
+        </p>
+      </header>
+
+      <!-- Verify Code -->
+      <main class="flex flex-col items-start self-stretch gap-10">
+        <section class="flex flex-col items-start gap-2 self-stretch">
+          <h1 class="text-2xl leading-normal font-bold">You’ll need a password</h1>
+          <p class="text-neutral500 text-sm leading-normal font-normal">Make sure it’s 8 characters or more</p>
+        </section>
+
+        <section class="flex flex-col items-end self-stretch gap-3">
+          <fieldset class="group w-full pt-2  pb-4 px-3 border border-neutral500 rounded-[4px] flex items-center focus-within:outline-none focus-within:border-twitterBlueDefault focus-within:ring-twitterBlueDefault">
+            <legend class="px-1 text-neutral500 text-xs font-medium leading-normal group-focus-within:text-twitterBlueDefault">
+              Password
+            </legend>
+            <input type="text" placeholder="Password" class="w-full bg-transparent  placeholder:text-neutral500 text-neutral50 text-base leading-normal focus:outline-none">
+            <img src="../public/images/eye.svg" alt="eyeicon" class="w-6 h-6">
+          </fieldset>
+        </section>
+      </main>
+    </section>
+
+    <!-- Next Button -->
+    <section class="self-stretch">
+      <a href="./homepage.html" class="w-full py-3 px-6 rounded-3xl bg-neutral500 hover:bg-neutral200 text-black font-bold leading-normal flex justify-center items-center shadow-signup backdrop-blur-xl-1" rel="noopener noreferrer">
+        <button>
+          Next
+        </button>
+      </a>
+    </section>
+  
+</body>

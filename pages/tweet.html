@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                twitterBlueDefault: "#1D9BF0",
+                twitterBluehover: '#1871CA',
+                twitterBlueDis: '#1E5D87',
+        buttonStroke: "#546A7A",
+        neutral50: "#F9F9F9",
+        neutral100: "#F4F4F4",
+        neutral200: "#E4E4E4",
+        neutral300: "#D3D3D3",
+        neutral400: "#A2A2A2",
+        neutral500: "#737373",
+        neutral600: "#525252",
+        neutral700: "#404040",
+        neutral800: "#262626",
+        neutral900: "#171717",
+        neutral950: "#0A0A0A",
+        neutral1000: "#000",
+            }
+          }
+        }
+      }
+      </script>
+      <title>100x</title>
+      </head>
+      <body class="min-h-screen bg-black font-inter text-neutral50 flex flex-col items-start">
+    <!-- Header with close & post buttons -->
+    <header class="py-3 px-4 flex items-center justify-between self-stretch">
+      <a href="../pages/homepage.html">
+        <img src="../../public/images/signup-x.svg" alt="cancel-icon">
+      </a>
+      <a href="../pages/homepage.html">
+        <button class="py-2 px-6 flex justify-center items-center gap-2.5 rounded-3xl bg-twitterBlueDis hover:bg-twitterBlueDefault disabled:opacity-50 disabled:hover:bg-twitterBlueDefault md:py-[15px] md:px-[93px] md:rounded-full">
+          <p class="text-neutral50 text-base font-bold leading-normal">
+            Post
+          </p>
+        </button>
+      </a>
+    </header>
+
+    <main class="self-stretch py-2 px-4 flex flex-1 gap-3">
+      <img src="../../public/images/user avatar4.png" alt="user-profile" class="w-9 h-9 rounded-full">
+      <textarea name="tweet-content" placeholder="What's happening?!" class="w-full flex items-center bg-transparent text-base leading-normal placeholder:text-neutral600 focus:outline-none resize-none" wrap="soft" spellcheck="false"></textarea>
+    </main>
+
+    <footer class="py-3 px-4 border-t border-neutral800 self-stretch text-sm text-neutral500">
+      0/280
+    </footer>
+  
+</body>
+
+</html>

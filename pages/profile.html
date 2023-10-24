@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                twitterBlueDefault: "#1D9BF0",
+                twitterBluehover: '#1871CA',
+                blueWash: "rgba(117, 190, 239, 0.2)",
+        Secondary: "rgba(255, 255, 255, 0.6)",
+        buttonStroke: "#546A7A",
+        neutral50: "#F9F9F9",
+        neutral100: "#F4F4F4",
+        neutral200: "#E4E4E4",
+        neutral300: "#D3D3D3",
+        neutral400: "#A2A2A2",
+        neutral500: "#737373",
+        neutral600: "#525252",
+        neutral700: "#404040",
+        neutral800: "#262626",
+        neutral900: "#171717",
+        neutral950: "#0A0A0A",
+        neutral1000: "#000",
+            }
+          }
+        }
+      }
+      </script>
+      <title>100x</title>
+      </head>
+      <body class="min-h-screen bg-black font-inter text-neutral50 flex flex-col relative">
+    <!-- Back arrow -->
+    <a href="../pages/homepage.html" class="p-1 bg-black rounded-full absolute top-4 left-4">
+      <img src="../../public/images/arrow-left.svg" alt="">
+    </a>
+    <!-- Banner -->
+    <section class="self-stretch">
+      <img src="../../public/images/banner.png" alt="banner" class="w-full">
+    </section>
+
+    <!-- Profile Details -->
+    <section class="relative py-3 px-4 flex flex-col border-b border-neutral500">
+      <img src="../../public/images/1490989538-egg.jpg" alt="user-dp" class="w-20 h-20 rounded-full border-4 border-black absolute left-4 top-0 -translate-y-1/2">
+      <div class="w-full flex justify-end">
+        <a href="./edit-profile.html">
+          <button class="py-2 px-5 justify-center items-center rounded-3xl border border-buttonStroke">
+            Edit profile
+          </button>
+        </a>
+      </div>
+      <div class="self-stretch flex flex-col gap-4">
+        <div class="self-stretch flex flex-col gap-1 leading-normal">
+          <h1 class="text-xl font-bold leading-normal">Devansh Thakkar</h1>
+          <p class="text-neutral500 text-base-1 leading-normal">@Devansh_Thakkar</p>
+        </div>
+        <div class="leading-normal">
+          Bio<br>
+          :] <br>
+          <span class="text-twitterBlueDefault"></span>
+        </div>
+        <div class="self-stretch flex flex-wrap gap-x-5 text-twitter-neutral-500">
+          <div class="flex items-center gap-1">
+            <img src="../../public/images/link-icon.svg" alt="link-icon">
+            <a href="https://imdevansh3.github.io/portfolio-responsive/" target="_blank" rel="noopener noreferrer" class="text-twitterBlueDefault">
+              Devansh Thakkar
+            </a>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="../../public/images/calendar-icon.svg" alt="calendar-icon">
+            <p>Joined September 2018</p>
+          </div>
+        </div>
+        <div class="self-stretch flex items-center gap-5 font-medium leading-normal">
+          <p>
+            217 <span class="text-neutral500 font-normal">Following</span>
+          </p>
+          <p>
+            118 <span class="text-neutral500 font-normal">Followers</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+   <!-- Tweets -->
+   <main class="self-stretch flex flex-col flex-1">
+    <article class="py-2 px-4 border-b border-neutral700 self-stretch flex items-start gap-4">
+      <!-- user avatar -->
+      <img src="../../public/images/user avatar4.png" alt="avatar" class="w-12 h-12 rounded-full">
+      <!-- tweet body -->
+      <div class="w-full flex flex-col gap-1 self-stretch">
+        <header class="flex items-center gap-2 self-stretch">
+          <p class="text-neutral50 text-base font-medium leading-normal">
+            Name
+          </p>
+          <p class="text-neutral500 text-base font-normal leading-normal">
+            @handle • 32m
+          </p>
+        </header>
+        <p class="self-stretch text-base-1 leading-normal">
+          Don't wish for it, work for it.
+        </p>
+        <div class="py-3 flex justify-between items-center self-stretch text-neutral500 text-sm leading-normal">
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/comment.svg" alt="comment-icon">
+            <p>11</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/retweet.svg" alt="retweet-icon">
+            <p>270</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/heart.svg" alt="heart-icon">
+            <p>1,869</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/frame.png" alt="reach">
+            <p>99.6k</p>
+          </button>
+        
+          <button class="flex items-center">
+            <img src="../../public/images/vector.svg" alt="share-icon">
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="py-2 px-4 border-b border-neutral700 self-stretch flex items-start gap-4">
+      <!-- user avatar -->
+      <img src="../../public/images/user avatar2.png" alt="avatar-1" class="w-12 h-12 rounded-full">
+      <!-- tweet body -->
+      <div class="w-full flex flex-col gap-1 self-stretch">
+        <header class="flex items-center gap-2 self-stretch">
+          <p class="text-neutral50 text-base font-medium leading-normal">
+            Name
+          </p>
+          <p class="text-neutral500 text-base font-normal leading-normal">
+            @handle • 10h
+          </p>
+        </header>
+        <p class="self-stretch text-base-1 leading-normal">
+          i've seen people absolutely despise auto layout in figma but i think it's a lifesaver-<br>
+          1. tidies everything nice and compact<br>
+          2. makes responsive design effortless<br>
+          3. no manual adjustments post any tweaks<br>
+          4. saves a tonnn of time<br><br>
+          sorry, but will stay an auto layout maxi all life.
+        </p>
+        <div class="py-3 flex justify-between items-center self-stretch text-neutral500 text-sm leading-normal">
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/comment.svg" alt="comment-icon">
+            <p>11</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/retweet.svg" alt="retweet-icon">
+            <p>270</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/heart.svg" alt="heart-icon">
+            <p>1,869</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/frame.png" alt="reach">
+            <p>99.6k</p>
+          </button>
+        
+          <button class="flex items-center">
+            <img src="../../public/images/vector.svg" alt="share-icon">
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="py-2 px-4 border-b border-neutral700 self-stretch flex items-start gap-4">
+      <!-- user avatar -->
+      <img src="../../public/images/user avatar3.png" alt="avatar-1" class="w-12 h-12 rounded-full">
+      <!-- tweet body -->
+      <div class="w-full flex flex-col gap-1 self-stretch">
+        <header class="flex items-center gap-2 self-stretch">
+          <p class="text-neutral50 text-base font-medium leading-normal">
+            Name
+          </p>
+          <p class="text-neutral500 text-base font-normal leading-normal">
+            @handle • 12h
+          </p>
+        </header>
+        <p class="self-stretch text-base-1 leading-normal">
+          Writing gets easier after the first sentence.
+          <br> <br>
+          Lifting gets easier after the first set.
+          <br> <br>
+          People think and think and think until they finally decide to act. Their attention shifts from internal to external, and
+          the difficulty they created in their mind vanishes.
+        </p>
+        <div class="py-3 flex justify-between items-center self-stretch text-neutral500 text-sm leading-normal">
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/comment.svg" alt="comment-icon">
+            <p>11</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/retweet.svg" alt="retweet-icon">
+            <p>270</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/heart.svg" alt="heart-icon">
+            <p>1,869</p>
+          </button>
+        
+          <button class="flex items-center gap-[5px]">
+            <img src="../../public/images/frame.png" alt="reach">
+            <p>99.6k</p>
+          </button>
+        
+          <button class="flex items-center">
+            <img src="../../public/images/vector.svg" alt="share-icon">
+          </button>
+        </div>
+      </div>
+    </article>
+</body>
+</head>
+</html>
